@@ -4,11 +4,11 @@ import './globals.css';
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.hivaulted.com'),
   title: 'HiVaulted | Social media, handled for small business',
-  description: 'HiVaulted turns your everyday business moments into polished social posts, so your business stays visible without social media becoming another job.',
+  description: 'HiVaulted creates, brands, schedules, and publishes social posts for busy small-business owners—with your approval and without another complicated routine.',
   alternates: { canonical: '/' },
   openGraph: {
     title: 'Your business keeps showing up. You don’t have to.',
-    description: 'Social media support for busy small-business owners. Send what you have. HiVaulted turns it into a polished post.',
+    description: 'Send a photo or a few words. HiVaulted turns them into branded, scheduled social posts for your small business.',
     url: '/',
     siteName: 'HiVaulted',
     type: 'website',
