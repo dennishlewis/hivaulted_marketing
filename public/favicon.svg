@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">HiVaulted symbol</title>
+  <desc id="desc">A rounded blue H joined by a soft blue conversation bubble.</desc>
+  <path fill="#123AA5" d="M64 20c-22.1 0-40 17.9-40 40v136c0 22.1 17.9 40 40 40s40-17.9 40-40V60c0-22.1-17.9-40-40-40Z"/>
+  <path fill="#2878F0" d="M192 20c-22.1 0-40 17.9-40 40v136c0 22.1 17.9 40 40 40s40-17.9 40-40V60c0-22.1-17.9-40-40-40Z"/>
+  <path fill="#A9D5EA" d="M79 101h98c16 0 29 12.1 29 27s-13 27-29 27h-39.5l-24 22.5 5.8-22.5H79c-16 0-29-12.1-29-27s13-27 29-27Z"/>
+</svg>
