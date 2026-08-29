@@ -37,10 +37,10 @@ export default function Home() {
           <div className="hero-actions"><a className="button" href="#demo">Make a sample post <span aria-hidden="true">→</span></a><a className="text-link" href="#product">See the product</a></div>
           <ul className="reassurance"><li><b>✓</b> Instagram, Facebook &amp; LinkedIn</li><li><b>✓</b> Built around your brand</li><li><b>✓</b> You approve the work</li></ul>
         </div>
-        <div className="hero-product" aria-label="HiVaulted content calendar dashboard">
+        <div className="hero-product" aria-label="HiVaulted post review workspace">
           <div className="hero-product-glow" />
-          <Image src="/product/ipad-hivaulted.webp" alt="HiVaulted dashboard showing a scheduled content calendar and post approvals" width={1080} height={608} priority />
-          <div className="product-float float-ready"><span>✓</span><p><strong>Your next post</strong><small>Ready for approval</small></p></div>
+          <Image src="/product/northstar/07-post-preview.webp" alt="HiVaulted Post Preview showing a branded Instagram post ready to review and approve" width={1440} height={900} priority />
+          <div className="product-float float-ready"><span>✓</span><p><strong>Review. Edit. Approve.</strong><small>The final say stays yours</small></p></div>
           <div className="product-float float-platforms"><b>f</b><b>◎</b><b>in</b><small>One calm place</small></div>
         </div>
       </section>
@@ -52,13 +52,13 @@ export default function Home() {
           <div><p className="eyebrow"><span /> A look inside</p><h2>Not another tool to manage.<br/><em>A clearer way to stop managing social.</em></h2></div>
           <p>Open HiVaulted when you want the full picture: what is planned, what needs your approval, and what has already gone out. Everything else can happen through the familiar channels you already use.</p>
         </div>
-        <div className="dashboard-frame"><div className="frame-bar"><i/><i/><i/><span>HiVaulted content calendar</span></div><Image src="/product/ipad-hivaulted.webp" alt="HiVaulted content calendar with scheduled posts, approval settings, and delivery preferences" width={1080} height={608} /></div>
+        <div className="dashboard-frame"><div className="frame-bar"><i/><i/><i/><span>HiVaulted posts workspace</span></div><Image src="/product/northstar/02-posts.webp" alt="HiVaulted Posts workspace showing branded social posts ready for review and approval" width={1440} height={900} /></div>
         <div className="product-details">
-          <article><span>01</span><h3>See what is happening</h3><p>Your calendar, scheduled posts, approvals, and publishing preferences live in one simple view.</p></article>
-          <article><span>02</span><h3>Review without the runaround</h3><p>Approve by text or email, request a change in plain language, and keep moving.</p></article>
-          <article><span>03</span><h3>Build confidence, then automate</h3><p>Start with approval on every post. Turn on automatic publishing only when it feels right.</p></article>
+          <article><div className="product-detail-image"><Image src="/product/northstar/01-brand.webp" alt="HiVaulted Brand workspace" width={1440} height={900} /></div><span>01 · Your brand</span><h3>Teach it once</h3><p>Your story, visual identity, voice, audience, and content preferences guide every post.</p></article>
+          <article><div className="product-detail-image"><Image src="/product/northstar/03-calendar.webp" alt="HiVaulted monthly content calendar" width={1440} height={900} /></div><span>02 · Your schedule</span><h3>See what is happening</h3><p>Review what is planned across Instagram, Facebook, and LinkedIn in one calm calendar.</p></article>
+          <article><div className="product-detail-image"><Image src="/product/northstar/04-media.webp" alt="HiVaulted media library" width={1440} height={900} /></div><span>03 · Your media</span><h3>Keep the good stuff ready</h3><p>Your approved images stay organized and ready to become the next polished post.</p></article>
         </div>
-        <p className="product-caption">Current product preview. The interface is being refined, but the workflow stays refreshingly simple.</p>
+        <p className="product-caption">Current Northstar interface shown with representative sample business content.</p>
       </section>
 
       <section className="problem-section">
