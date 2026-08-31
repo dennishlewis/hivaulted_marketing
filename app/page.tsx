@@ -32,8 +32,8 @@ export default function Home() {
       <section className="hero" id="top">
         <div className="hero-copy">
           <p className="eyebrow"><span /> Your behind-the-scenes social team</p>
-          <h1>Send a moment.<br/><em>Get a month of momentum.</em></h1>
-          <p className="hero-lede">HiVaulted creates, brands, schedules, and publishes social posts for your small business—with your approval and without another complicated routine.</p>
+          <h1>Your social media gets done.<br/><em>You get back to business.</em></h1>
+          <p className="hero-lede">Send a photo or a few words. HiVaulted turns them into branded, scheduled social posts—with your approval and without another complicated routine.</p>
           <div className="hero-actions"><a className="button" href="#demo">Make a sample post <span aria-hidden="true">→</span></a><a className="text-link" href="#product">See the product</a></div>
           <ul className="reassurance"><li><b>✓</b> Instagram, Facebook &amp; LinkedIn</li><li><b>✓</b> Built around your brand</li><li><b>✓</b> You approve the work</li></ul>
         </div>
