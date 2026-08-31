@@ -1,5 +1,5 @@
 {
-  "name": "sites-project",
+  "name": "hivaulted-marketing",
   "version": "0.1.0",
   "private": true,
   "engines": {
@@ -10,6 +10,7 @@
     "build": "vinext build",
     "start": "vinext start",
     "deploy:cloudflare": "npm run build && wrangler deploy --config dist/server/wrangler.json",
+    "deploy:staging": "npm run build && wrangler deploy --config dist/server/wrangler.json --name hivaulted-marketing-staging --keep-vars",
     "types:cloudflare": "wrangler types --config dist/server/wrangler.json",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next"
   },
