@@ -15,6 +15,7 @@ const faqs = [
   ['Where can I publish?', 'HiVaulted is designed to help you stay active on Instagram, Facebook, and LinkedIn from one simple workflow.'],
   ['Do I have to learn another complicated tool?', 'No. You can send ideas and review posts through familiar channels like text and email. The dashboard is there when you want the bigger picture.'],
   ['What if I have nothing to send?', 'That is part of the point. HiVaulted can help keep your presence moving even when you do not have a fresh photo or idea ready.'],
+  ['What happens after the 10-day trial?', 'Your trial is $10 for the first 10 days. When you start, choose the monthly or annual Founder plan you want. After the trial, that plan begins automatically at its Founder rate.'],
 ];
 
 const faqSchema = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqs.map(([question, answer]) => ({ '@type': 'Question', name: question, acceptedAnswer: { '@type': 'Answer', text: answer } })) };
@@ -89,7 +90,38 @@ export default function Home() {
 
       <section className="award-section"><div className="award-medal">2026<span>AI</span></div><div><p className="eyebrow"><span /> Recognized innovation</p><h2>Built by someone who understands what busy business owners are up against.</h2><p>HiVaulted founder Anne Archer was named 2026 AI Innovator of the Year for the Minnesota/Wisconsin region of Coldwell Banker Realty.</p><small>Awarded to Anne Archer. Independent of Coldwell Banker Realty.</small></div></section>
 
-      <section className="pricing-section" id="pricing"><div className="section-heading"><p className="eyebrow"><span /> Pre-launch pricing</p><h2>Choose how you want<br/>to get social handled.</h2><p>Both options include hands-on setup, your brand voice, and the same easier way to stay visible.</p></div><div className="pricing-grid"><article className="price-card"><p className="plan-kicker">Flexible</p><h3>Monthly pre-launch</h3><div className="price-label">Founding rate</div><p>Start simply and keep things month to month.</p><ul><li>✓ Branded, ready-to-post content</li><li>✓ Caption and image creation</li><li>✓ Approval by text or email</li><li>✓ Hands-free scheduling</li></ul><a href="https://app.hivaulted.com/">See current monthly rate <span>→</span></a></article><article className="price-card featured"><div className="popular-tag">Best pre-launch value</div><p className="plan-kicker">Commit and save</p><h3>Annual pre-launch</h3><div className="price-label">Lowest founding rate</div><p>Make consistent visibility part of the business for the year.</p><ul><li>✓ Everything in monthly</li><li>✓ Best available launch rate</li><li>✓ Priority onboarding support</li><li>✓ One less monthly decision</li></ul><a href="https://app.hivaulted.com/">See current annual rate <span>→</span></a></article></div><p className="pricing-note">Pre-launch availability is limited. Exact current rates are shown during account setup.</p></section>
+      <section className="pricing-section" id="pricing">
+        <div className="section-heading">
+          <p className="eyebrow"><span /> Founder pricing</p>
+          <h2>Start for $10.<br/>Then choose your rhythm.</h2>
+          <p>Try HiVaulted for 10 days. If it makes social feel lighter, continue with the Founder plan you selected when you signed up.</p>
+        </div>
+        <div className="trial-offer">
+          <div className="trial-price"><span>$</span>10</div>
+          <div><strong>Your first 10 days</strong><p>See how HiVaulted fits your business—then your selected Founder plan begins automatically.</p></div>
+          <span className="founder-limit">First 500 customers</span>
+        </div>
+        <div className="pricing-grid">
+          <article className="price-card">
+            <p className="plan-kicker">Stay flexible</p>
+            <h3>Monthly</h3>
+            <div className="price-label"><span>$29</span><small>/ month</small></div>
+            <p>Keep social handled with a simple month-to-month plan.</p>
+            <ul><li>✓ Branded, ready-to-post content</li><li>✓ Caption and image creation</li><li>✓ Approval by text or email</li><li>✓ Hands-free scheduling</li></ul>
+            <a href="https://app.hivaulted.com/">Start my 10-day trial — $10 <span>→</span></a>
+          </article>
+          <article className="price-card featured">
+            <div className="popular-tag">Best Founder value</div>
+            <p className="plan-kicker">Commit and save</p>
+            <h3>Annual</h3>
+            <div className="price-label"><span>$299</span><small>/ year</small></div>
+            <p>Save $49 a year and make consistent visibility part of the business.</p>
+            <ul><li>✓ Everything in monthly</li><li>✓ $49 less than paying monthly</li><li>✓ Priority onboarding support</li><li>✓ One less monthly decision</li></ul>
+            <a href="https://app.hivaulted.com/">Start my 10-day trial — $10 <span>→</span></a>
+          </article>
+        </div>
+        <p className="pricing-note"><strong>Founder pricing is limited to the first 500 customers.</strong> Choose monthly or annual when you start. After 10 days, your selected plan begins automatically.</p>
+      </section>
 
       <section className="faq-section"><div><p className="eyebrow"><span /> Good questions</p><h2>The things you’re probably wondering.</h2><p>Still curious? Write to <a href="mailto:hello@hivaulted.com">hello@hivaulted.com</a>. A real person will get back to you.</p></div><div className="faq-list">{faqs.map(([question, answer], index) => <details key={question} open={index === 0}><summary>{question}<span>＋</span></summary><p>{answer}</p></details>)}</div></section>
 
