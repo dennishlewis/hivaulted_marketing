@@ -105,6 +105,7 @@ export default function Home() {
           <article className="price-card">
             <p className="plan-kicker">Stay flexible</p>
             <h3>Monthly</h3>
+            <div className="price-savings"><del>$39/month</del><span>Founder price saves $10/month</span></div>
             <div className="price-label"><span>$29</span><small>/ month</small></div>
             <p>Keep social handled with a simple month-to-month plan.</p>
             <ul><li>✓ Branded, ready-to-post content</li><li>✓ Caption and image creation</li><li>✓ Approval by text or email</li><li>✓ Hands-free scheduling</li></ul>
@@ -114,8 +115,9 @@ export default function Home() {
             <div className="popular-tag">Best Founder value</div>
             <p className="plan-kicker">Commit and save</p>
             <h3>Annual</h3>
+            <div className="price-savings"><del>$399/year</del><span>Founder price saves $100/year</span></div>
             <div className="price-label"><span>$299</span><small>/ year</small></div>
-            <p>Save $49 a year and make consistent visibility part of the business.</p>
+            <p>Lock in the deepest Founder discount and make consistent visibility part of the business.</p>
             <ul><li>✓ Everything in monthly</li><li>✓ $49 less than paying monthly</li><li>✓ Priority onboarding support</li><li>✓ One less monthly decision</li></ul>
             <a href="https://app.hivaulted.com/">Start my 10-day trial — $10 <span>→</span></a>
           </article>
