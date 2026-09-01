@@ -122,7 +122,7 @@ export default function Home() {
             <a href="https://app.hivaulted.com/">Start my 10-day trial — $10 <span>→</span></a>
           </article>
         </div>
-        <p className="pricing-note"><strong>Founder pricing is limited to the first 500 customers.</strong> Choose monthly or annual when you start. After 10 days, your selected plan begins automatically.</p>
+        <p className="pricing-note"><strong>Founder pricing is limited to the first 500 customers.</strong><span>Choose monthly or annual when you start. After 10 days, your selected plan begins automatically.</span></p>
       </section>
 
       <section className="faq-section"><div><p className="eyebrow"><span /> Good questions</p><h2>The things you’re probably wondering.</h2><p>Still curious? Write to <a href="mailto:hello@hivaulted.com">hello@hivaulted.com</a>. A real person will get back to you.</p></div><div className="faq-list">{faqs.map(([question, answer], index) => <details key={question} open={index === 0}><summary>{question}<span>＋</span></summary><p>{answer}</p></details>)}</div></section>
