@@ -15,7 +15,7 @@ const faqs = [
   ['Where can I publish?', 'HiVaulted is designed to help you stay active on Instagram, Facebook, and LinkedIn from one simple workflow.'],
   ['Do I have to learn another complicated tool?', 'No. You can send ideas and review posts through familiar channels like text and email. The dashboard is there when you want the bigger picture.'],
   ['What if I have nothing to send?', 'That is part of the point. HiVaulted can help keep your presence moving even when you do not have a fresh photo or idea ready.'],
-  ['What happens after the 10-day trial?', 'Your trial is $10 for the first 10 days. When you start, choose the monthly or annual Founder plan you want. After the trial, that plan begins automatically at its Founder rate.'],
+  ['How does the $10 trial work?', 'The $10 trial applies only to the monthly plan. After 10 days, it automatically becomes the $29/month Founder plan. The annual plan does not include a trial; it begins immediately at $299/year.'],
 ];
 
 const faqSchema = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqs.map(([question, answer]) => ({ '@type': 'Question', name: question, acceptedAnswer: { '@type': 'Answer', text: answer } })) };
@@ -93,36 +93,33 @@ export default function Home() {
       <section className="pricing-section" id="pricing">
         <div className="section-heading">
           <p className="eyebrow"><span /> Founder pricing</p>
-          <h2>Start for $10.<br/>Then choose your rhythm.</h2>
-          <p>Try HiVaulted for 10 days. If it makes social feel lighter, continue with the Founder plan you selected when you signed up.</p>
-        </div>
-        <div className="trial-offer">
-          <div className="trial-price"><span>$</span>10</div>
-          <div><strong>Your first 10 days</strong><p>See how HiVaulted fits your business—then your selected Founder plan begins automatically.</p></div>
-          <span className="founder-limit">First 500 customers</span>
+          <h2>Try it monthly.<br/>Or save more for the year.</h2>
+          <p>Monthly gives you 10 days to try HiVaulted for $10. Annual skips the trial and gives you the deepest Founder discount from day one.</p>
         </div>
         <div className="pricing-grid">
           <article className="price-card">
-            <p className="plan-kicker">Stay flexible</p>
+            <p className="plan-kicker">Try it first</p>
             <h3>Monthly</h3>
+            <div className="plan-status trial-status"><strong>$10</strong><span>for your first 10 days</span></div>
             <div className="price-savings"><del>$39/month</del><span>Founder price saves $10/month</span></div>
             <div className="price-label"><span>$29</span><small>/ month</small></div>
-            <p>Keep social handled with a simple month-to-month plan.</p>
+            <p>Pay $10 for the trial. After 10 days, your plan automatically continues at the $29 monthly Founder rate.</p>
             <ul><li>✓ Branded, ready-to-post content</li><li>✓ Caption and image creation</li><li>✓ Approval by text or email</li><li>✓ Hands-free scheduling</li></ul>
             <a href="https://app.hivaulted.com/">Start my 10-day trial — $10 <span>→</span></a>
           </article>
           <article className="price-card featured">
             <div className="popular-tag">Best Founder value</div>
-            <p className="plan-kicker">Commit and save</p>
+            <p className="plan-kicker">Start and save</p>
             <h3>Annual</h3>
+            <div className="plan-status annual-status"><strong>Starts immediately</strong><span>No trial period</span></div>
             <div className="price-savings"><del>$399/year</del><span>Founder price saves $100/year</span></div>
             <div className="price-label"><span>$299</span><small>/ year</small></div>
-            <p>Lock in the deepest Founder discount and make consistent visibility part of the business.</p>
+            <p>Choose annual and your Founder plan begins right away at $299 for the year. The annual plan does not include a trial.</p>
             <ul><li>✓ Everything in monthly</li><li>✓ $49 less than paying monthly</li><li>✓ Priority onboarding support</li><li>✓ One less monthly decision</li></ul>
-            <a href="https://app.hivaulted.com/">Start my 10-day trial — $10 <span>→</span></a>
+            <a href="https://app.hivaulted.com/">Choose annual — $299/year <span>→</span></a>
           </article>
         </div>
-        <p className="pricing-note"><strong>Founder pricing is limited to the first 500 customers.</strong><span>Choose monthly or annual when you start. After 10 days, your selected plan begins automatically.</span></p>
+        <p className="pricing-note"><strong>Founder pricing is limited to the first 500 customers.</strong><span>The $10, 10-day trial applies only to monthly. Annual begins immediately at $299/year with no trial period.</span></p>
       </section>
 
       <section className="faq-section"><div><p className="eyebrow"><span /> Good questions</p><h2>The things you’re probably wondering.</h2><p>Still curious? Write to <a href="mailto:hello@hivaulted.com">hello@hivaulted.com</a>. A real person will get back to you.</p></div><div className="faq-list">{faqs.map(([question, answer], index) => <details key={question} open={index === 0}><summary>{question}<span>＋</span></summary><p>{answer}</p></details>)}</div></section>
