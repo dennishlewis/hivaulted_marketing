@@ -14,7 +14,7 @@ const faqs = [
   ['Do posts publish without my approval?', 'Only if you want them to. Approve every post, request edits, or choose automatic publishing once you feel comfortable.'],
   ['Where can I publish?', 'HiVaulted is designed to help you stay active on Instagram, Facebook, and LinkedIn from one simple workflow.'],
   ['Do I have to learn another complicated tool?', 'No. You can send ideas and review posts through familiar channels like text and email. The dashboard is there when you want the bigger picture.'],
-  ['What if I have nothing to send?', 'That is part of the point. HiVaulted can help keep your presence moving even when you do not have a fresh photo or idea ready.'],
+  ['What if I don’t have an image?', 'No problem. HiVaulted can help you come up with post ideas and create or source imagery so you can keep your social media moving even when you don’t have a fresh photo ready.'],
   ['How does the $10 trial work?', 'The $10 trial applies only to the monthly plan. After 10 days, it automatically becomes the $29/month Founder plan. The annual plan does not include a trial; it begins immediately at $299/year.'],
 ];
 
@@ -68,13 +68,13 @@ export default function Home() {
       </section>
 
       <section className="steps-section" id="how-it-works">
-        <div className="section-heading"><p className="eyebrow"><span /> From your day to their feed</p><h2>Give us the spark.<br/>We handle the posting.</h2><p>Use HiVaulted as lightly as you want. A photo and a sentence are enough to get moving.</p></div>
+        <div className="section-heading"><p className="eyebrow"><span /> From your day to their feed</p><h2>Give us the spark.<br/>We handle the posting.</h2><p>Bring a photo, choose an image, or start with nothing. HiVaulted helps turn it into a finished post.</p></div>
         <div className="journey-grid">
+          <article><div className="journey-image journey-choice-visual" aria-label="Choose from uploading your own photo, selecting a stock image, or generating an image with AI"><div><Image src="/product/step-1.webp" alt="" width={1200} height={676} /><span>↑</span><strong>Upload</strong></div><div><Image src="/product/northstar/04-media.webp" alt="" width={1440} height={900} /><span>▦</span><strong>Stock</strong></div><div><Image src="/product/step-3.webp" alt="" width={1200} height={676} /><span>✦</span><strong>Create AI</strong></div></div><span>01</span><h3>Choose your visual</h3><p>Upload your own photo, choose a stock image, or create an AI-generated image.</p></article>
           {[
-            ['/product/step-1.webp','01','Capture it','Take a photo of what is already happening in your business.'],
-            ['/product/step-2.webp','02','Add a few words','Tell us what matters. A polished brief is definitely not required.'],
-            ['/product/step-3.webp','03','Get a finished post','HiVaulted shapes the image and caption around your brand.'],
-            ['/product/step-4.webp','04','Approve and move on','Give it a quick yes, ask for a change, or let it publish.'],
+            ['/product/step-2.webp','02','HiVaulted creates the post','We create the caption and shape the content around your brand, voice, and preferences.'],
+            ['/product/step-3.webp','03','Review and refine','Preview the finished post and make any edits you want.'],
+            ['/product/step-4.webp','04','Approve and move on','Give it a quick yes, request a change, and we’ll post it for you.'],
           ].map(([src, number, title, copy]) => <article key={number}><div className="journey-image"><Image src={src} alt={`${title} in the HiVaulted workflow`} width={1200} height={676} /></div><span>{number}</span><h3>{title}</h3><p>{copy}</p></article>)}
         </div>
         <div className="tiny-promise"><b>From your phone.</b><span>•</span>No design software.<span>•</span>No blank caption box.</div>
@@ -88,7 +88,7 @@ export default function Home() {
 
       <section className="included-section"><div><p className="eyebrow"><span /> What HiVaulted handles</p><h2>The work between<br/>“we should post” and “it’s live.”</h2></div><div className="included-grid">{['Brand setup and voice','Post ideas when yours run dry','Image and caption creation','Approvals by text or email','Content scheduling','Publishing across key platforms'].map(item => <p key={item}><b>✓</b>{item}</p>)}</div></section>
 
-      <section className="award-section"><div className="award-medal">2026<span>AI</span></div><div><p className="eyebrow"><span /> Recognized innovation</p><h2>Built by someone who understands what busy business owners are up against.</h2><p>HiVaulted founder Anne Archer was named 2026 AI Innovator of the Year for the Minnesota/Wisconsin region of Coldwell Banker Realty.</p><small>Awarded to Anne Archer. Independent of Coldwell Banker Realty.</small></div></section>
+      <section className="award-section"><div className="award-medal">2026<span>AI</span></div><div><p className="eyebrow"><span /> Recognized innovation</p><h2>Built by someone who understands what busy business owners are up against.</h2><p>HiVaulted founder Anne Archer was named 2026 AI Innovator of the Year for the Minnesota/Wisconsin region of Coldwell Banker Realty.</p><small>Awarded to Anne Archer. Independent of Coldwell Banker Realty.</small><div className="recognized-award"><Image src="/ava-gold-winner.webp" alt="2026 AVA Digital Awards Gold Winner" width={600} height={577} /><p><strong>2026 AVA Digital Awards</strong><span>Gold Winner</span></p></div></div></section>
 
       <section className="pricing-section" id="pricing">
         <div className="section-heading">
