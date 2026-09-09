@@ -131,8 +131,11 @@ export default function DemoTool() {
         </label>
 
         <div className="image-picker">
-          <div className="image-picker-heading"><div><strong>Choose a photo</strong><small>{isLoadingImages ? 'Finding a few good options…' : 'Use one of these or add your own.'}</small></div>
-            <label className="upload-button">{isUploading ? 'Uploading…' : '＋ Add my photo'}<input type="file" accept="image/jpeg,image/png,image/webp" onChange={uploadImage} disabled={isUploading} /></label>
+          <div className="image-picker-heading"><div><strong>Choose a photo</strong><small>{isLoadingImages ? 'Finding a few good options…' : 'Use one of these or add your own. AI generation is available only inside the live application.'}</small></div>
+            <div className="image-actions">
+              <label className="upload-button">{isUploading ? 'Uploading…' : '+ Add my photo'}<input type="file" accept="image/jpeg,image/png,image/webp" onChange={uploadImage} disabled={isUploading} /></label>
+              <button className="upload-button ai-image-button" type="button">+ Generate with AI</button>
+            </div>
           </div>
           <div className={`image-options ${isLoadingImages ? 'is-loading' : ''}`}>
             {images.map((image) => <label key={image.regularUrl} className={imageUrl === image.regularUrl ? 'selected' : ''}>
