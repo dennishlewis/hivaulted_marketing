@@ -25,7 +25,7 @@ export default function Home() {
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <header className="site-header">
-        <a href="#top" aria-label="HiVaulted home" className="brand-link"><Image src="/hivaulted-horizontal.svg" alt="HiVaulted" width={244} height={52} priority /></a>
+        <a href="#top" aria-label="HiVaulted home" className="brand-link"><Image src="/hivaulted-logo.png" alt="HiVaulted" width={1000} height={271} priority /></a>
         <nav aria-label="Primary navigation"><a href="#product">The product</a><a href="#how-it-works">How it works</a><a href="#demo">Try it</a><a href="#pricing">Pricing</a></nav>
         <a className="button button-small" href="https://app.hivaulted.com/">Get started</a>
       </header>
@@ -126,7 +126,7 @@ export default function Home() {
 
       <section className="final-cta"><div><p className="eyebrow light"><span /> Your business has enough to do</p><h2>Be worth remembering.<br/><em>Without remembering to post.</em></h2><p>Give HiVaulted a moment from your day. Get a polished, consistent social presence back.</p><div><a className="button button-green" href="https://app.hivaulted.com/">Take social off my plate <span>→</span></a><a href="#demo">Or make a sample post</a></div></div><div className="cta-stamp">POST<br/><span>SMARTER</span><small>RISE HIGHER</small></div></section>
 
-      <footer><div className="footer-brand-row"><div><a href="#top" className="footer-logo"><Image src="/hivaulted-horizontal.svg" alt="HiVaulted" width={244} height={52} /></a><p>Social media support for people who would rather be doing their actual work.</p></div><div className="footer-recognition"><span>Founder award recognition</span><div><Image src="/coldwell-banker-logo.webp" alt="Coldwell Banker Realty" width={360} height={432} /></div></div></div><nav><a href="#product">The product</a><a href="#how-it-works">How it works</a><a href="#demo">Demo</a><a href="#pricing">Pricing</a><a href="mailto:hello@hivaulted.com">Contact</a><a href="https://www.hivaulted.com/privacy-policy">Privacy</a><a href="https://www.hivaulted.com/terms-conditions">Terms</a></nav><div className="footer-bottom"><span>© 2026 HiVaulted™. All rights reserved.</span><span>Customized by you. Powered by thoughtful AI.</span></div></footer>
+      <footer><div className="footer-brand-row"><div><a href="#top" className="footer-logo"><Image src="/hivaulted-logo.png" alt="HiVaulted" width={1000} height={271} /></a><p>Social media support for people who would rather be doing their actual work.</p></div><div className="footer-recognition"><span>Founder award recognition</span><div><Image src="/coldwell-banker-logo.webp" alt="Coldwell Banker Realty" width={360} height={432} /></div></div></div><nav><a href="#product">The product</a><a href="#how-it-works">How it works</a><a href="#demo">Demo</a><a href="#pricing">Pricing</a><a href="mailto:hello@hivaulted.com">Contact</a><a href="https://www.hivaulted.com/privacy-policy">Privacy</a><a href="https://www.hivaulted.com/terms-conditions">Terms</a></nav><div className="footer-bottom"><span>© 2026 HiVaulted™. All rights reserved.</span><span>Customized by you. Powered by thoughtful AI.</span></div></footer>
     </main>
   );
 }

@@ -6,6 +6,10 @@ export const metadata: Metadata = {
   title: 'HiVaulted | Social media, handled for small business',
   description: 'HiVaulted creates, brands, schedules, and publishes social posts for busy small-business owners—with your approval and without another complicated routine.',
   alternates: { canonical: '/' },
+  icons: {
+    icon: [{ url: '/hivaulted-icon.png', type: 'image/png', sizes: '256x256' }],
+    apple: [{ url: '/hivaulted-icon.png', sizes: '256x256' }],
+  },
   openGraph: {
     title: 'Your business keeps showing up. You don’t have to.',
     description: 'Send a photo or a few words. HiVaulted turns them into branded, scheduled social posts for your small business.',
