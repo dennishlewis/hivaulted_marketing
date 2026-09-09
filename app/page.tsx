@@ -40,7 +40,7 @@ export default function Home() {
         </div>
         <div className="hero-product" aria-label="HiVaulted post review workspace">
           <div className="hero-product-glow" />
-          <Image src="/product/northstar/07-post-preview.webp" alt="HiVaulted Post Preview showing a branded Instagram post ready to review and approve" width={1440} height={900} priority />
+          <Image src="/product/current-posts-interface.webp" alt="HiVaulted posts workspace showing social content ready to review, schedule, and approve" width={1525} height={1031} priority />
           <div className="product-float float-ready"><span>✓</span><p><strong>Review. Edit. Approve.</strong><small>The final say stays yours</small></p></div>
           <div className="product-float float-platforms"><b>f</b><b>◎</b><b>in</b><small>One calm place</small></div>
         </div>
@@ -53,13 +53,13 @@ export default function Home() {
           <div><p className="eyebrow"><span /> A look inside</p><h2>Not another tool to manage.<br/><em>A clearer way to stop managing social.</em></h2></div>
           <p>Open HiVaulted when you want the full picture: what is planned, what needs your approval, and what has already gone out. Everything else can happen through the familiar channels you already use.</p>
         </div>
-        <div className="dashboard-frame"><div className="frame-bar"><i/><i/><i/><span>HiVaulted posts workspace</span></div><Image src="/product/northstar/02-posts.webp" alt="HiVaulted Posts workspace showing branded social posts ready for review and approval" width={1440} height={900} /></div>
+        <div className="dashboard-frame"><div className="frame-bar"><i/><i/><i/><span>HiVaulted posts workspace</span></div><Image src="/product/current-posts-interface.webp" alt="HiVaulted application interface showing social post previews, schedule dates, and approval controls" width={1525} height={1031} /></div>
         <div className="product-details">
           <article><div className="product-detail-image"><Image src="/product/northstar/01-brand.webp" alt="HiVaulted Brand workspace" width={1440} height={900} /></div><span>01 · Your brand</span><h3>Teach it once</h3><p>Your story, visual identity, voice, audience, and content preferences guide every post.</p></article>
           <article><div className="product-detail-image"><Image src="/product/northstar/03-calendar.webp" alt="HiVaulted monthly content calendar" width={1440} height={900} /></div><span>02 · Your schedule</span><h3>See what is happening</h3><p>Review what is planned across Instagram, Facebook, and LinkedIn in one calm calendar.</p></article>
           <article><div className="product-detail-image"><Image src="/product/northstar/04-media.webp" alt="HiVaulted media library" width={1440} height={900} /></div><span>03 · Your media</span><h3>Keep the good stuff ready</h3><p>Your approved images stay organized and ready to become the next polished post.</p></article>
         </div>
-        <p className="product-caption">Current Northstar interface shown with representative sample business content.</p>
+        <p className="product-caption">Current HiVaulted interface shown with representative real estate content.</p>
       </section>
 
       <section className="problem-section">
