@@ -5,13 +5,13 @@ const transformations = [
   ['Stay visible through busy weeks', 'Your business keeps showing up, even when posting never makes today’s list.'],
   ['Look polished everywhere', 'Every post follows your voice, colors, and style—without you opening a design tool.'],
   ['Make more of what already happens', 'A delivery, a happy customer, or today’s special becomes useful marketing.'],
-  ['Keep the final say', 'Approve, request a change, or let trusted content publish automatically.'],
+  ['Keep the final say', 'Approve, request a change, or approve each post before it goes live.'],
 ];
 
 const faqs = [
   ['Do I need to know anything about social media?', 'Not at all. HiVaulted is built for business owners who would rather focus on their actual work. Send a photo or a few words and we handle the post.'],
   ['Will the posts sound like me?', 'Yes. HiVaulted learns your tone, business, colors, and preferences so the finished content feels like your brand—not generic AI copy.'],
-  ['Do posts publish without my approval?', 'Only if you want them to. Approve every post, request edits, or choose automatic publishing once you feel comfortable.'],
+  ['Do posts publish without my approval?', 'Approve every post or request edits before anything goes live.'],
   ['Where can I publish?', 'HiVaulted is designed to help you stay active on Instagram, Facebook, and LinkedIn from one simple workflow.'],
   ['Do I have to learn another complicated tool?', 'No. You can send ideas and review posts through familiar channels like text and email. The dashboard is there when you want the bigger picture.'],
   ['What if I don’t have an image?', 'No problem. HiVaulted can help you come up with post ideas and create or source imagery so you can keep your social media moving even when you don’t have a fresh photo ready.'],
@@ -80,11 +80,11 @@ export default function Home() {
         <div className="tiny-promise"><b>From your phone.</b><span>•</span>No design software.<span>•</span>No blank caption box.</div>
       </section>
 
-      <section className="demo-section" id="demo"><div className="section-heading demo-heading"><p className="eyebrow"><span /> Try the actual idea</p><h2>See what your business<br/>could post next.</h2><p>Choose your business, add a few words, and watch one more thing come off your plate.</p></div><DemoTool /><p className="demo-privacy">No account needed. Your image and message are used only to create this demo post.</p></section>
+      <section className="demo-section" id="demo"><div className="section-heading demo-heading"><p className="eyebrow"><span /> Try the actual idea</p><h2>See what your business<br/>could post next.</h2><p>Choose your business, share what you want to promote — or start with nothing — and watch one more thing come off your plate.</p></div><DemoTool /><p className="demo-privacy">No account needed. Your image and message are used only to create this demo post.</p></section>
 
       <section className="transformation-section"><div className="transformation-heading"><p className="eyebrow light"><span /> What changes</p><h2>Social stops nagging you.<br/><em>Your business keeps showing up.</em></h2></div><div className="transformation-grid">{transformations.map(([title, copy], index) => <article key={title}><span>0{index + 1}</span><h3>{title}</h3><p>{copy}</p></article>)}</div></section>
 
-      <section className="control-section"><div className="control-visual"><div className="message-bubble bubble-a"><span>H</span><p>Your Saturday post is ready. Want to send it?</p></div><div className="message-bubble bubble-b"><p>Make the first line warmer.</p></div><div className="message-bubble bubble-c"><span>H</span><p>Done. Approve this version?</p></div><Image className="approve-sticker" src="/product/just-approve.webp" alt="Just approve" width={441} height={159} /></div><div className="control-copy"><p className="eyebrow"><span /> Your brand. Your call.</p><h2>Hand off the work.<br/><em>Keep the judgment.</em></h2><p>HiVaulted removes the production work, not your control. Review by text or email, ask for changes like you would ask a person, and automate only when you trust the rhythm.</p><ul><li><b>✓</b> Your voice and visual identity built in</li><li><b>✓</b> Plain-English edits—no designer required</li><li><b>✓</b> Approval settings you can change anytime</li></ul></div></section>
+      <section className="control-section"><div className="control-visual"><div className="message-bubble bubble-a"><span>H</span><p>Your Saturday post is ready. Want to send it?</p></div><div className="message-bubble bubble-b"><p>Make the first line warmer.</p></div><div className="message-bubble bubble-c"><span>H</span><p>Done. Approve this version?</p></div><Image className="approve-sticker" src="/product/just-approve.webp" alt="Just approve" width={441} height={159} /></div><div className="control-copy"><p className="eyebrow"><span /> Your brand. Your call.</p><h2>Hand off the work.<br/><em>Keep the judgment.</em></h2><p>HiVaulted removes the production work, not your control. Review by text or email, ask for changes like you would ask a person, and approve quickly once you trust the rhythm.</p><ul><li><b>✓</b> Your voice and visual identity built in</li><li><b>✓</b> Plain-English edits—no designer required</li><li><b>✓</b> Approval settings you can change anytime</li></ul></div></section>
 
       <section className="included-section"><div><p className="eyebrow"><span /> What HiVaulted handles</p><h2>The work between<br/>“we should post” and “it’s live.”</h2></div><div className="included-grid">{['Brand setup and voice','Post ideas when yours run dry','Image and caption creation','Approvals by text or email','Content scheduling','Publishing across key platforms'].map(item => <p key={item}><b>✓</b>{item}</p>)}</div></section>
 
