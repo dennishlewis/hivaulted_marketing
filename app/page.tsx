@@ -65,6 +65,12 @@ export default function Home() {
       <section className="problem-section">
         <div className="problem-lead"><p className="eyebrow"><span /> Built for real business days</p><h2>You’re not bad at social media.<br/><em>It’s just not your actual job.</em></h2></div>
         <div className="problem-copy"><p>Your customers need to see you. But between serving them, managing the books, answering messages, and doing the work itself, “make a post” keeps sliding to tomorrow.</p><p><strong>HiVaulted closes that gap.</strong> No midnight caption writing. No hashtag roulette. No five-tab circus. Just a steady, professional presence that does not depend on your spare time.</p></div>
+        <figure className="problem-comparison">
+          <div className="problem-comparison-scroll">
+            <Image src="/product/social-media-workload-comparison.webp" alt="Comparison showing HiVaulted as the easiest social media management option to use, with the lowest burden for business owners" width={1500} height={844} />
+          </div>
+          <figcaption>Built for the result of social media—without making you operate it.</figcaption>
+        </figure>
       </section>
 
       <section className="steps-section" id="how-it-works">
